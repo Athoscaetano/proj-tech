@@ -85,12 +85,12 @@
                 </header>
                 <fieldset>
                     <label for="investimento">diga-nos o quanto você quer investir:</label>
-                    <!-- Aqui coloquei o tipo de entrada como área de texto para que o usuário escreva o valor, colocando o placeholder como um auxílio aos leitores de tela e maxlength para que não passe de 10 caracteres. -->
+                    <!-- Aqui coloquei o tipo de entrada como área de texto para que o usuário escreva o valor, colocando o placeholder como um auxílio aos leitores de tela e maxlength para que não passe de 10 letras.-->
                     <input type="testarea" id="test" name="test" placeholder="digite o valor do seu investimento aqui" maxlength="10" />
+                    <!-- Aqui fechei a section indicando o término da parte de perguntas -->
                 </fieldset>
-           
-           <!-- Aqui fechei a section indicando o término da parte de perguntas -->
-        --> </section>
+             </section>
+
             
         <!-- Aqui iniciei a section de dados pessoais -->
         <section>
@@ -126,7 +126,7 @@
 <div class="input-group">
 <fieldset>
 <label for="telefone">telefone*:</label>
-<input type="tel" required="required" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="ensira seu telefone aqui:" />
+<input type="tel" id="telefone" required maxlength="15" name="telefone" placeholder="ensira seu telefone aqui:" />
 </fieldset>
 </div>
 <hr>

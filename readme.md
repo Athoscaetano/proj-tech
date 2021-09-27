@@ -1,0 +1,2 @@
+trata-se do meu projeto que tem como objetivo desenvolver uma página de formulário seletivo para o itaú. 
+Meu objetivo principal é construir uma página que seja o mais acessível e semântico possível, utilizando algumas validações com java script.

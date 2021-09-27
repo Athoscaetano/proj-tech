@@ -12,7 +12,7 @@ var rua = document.getElementById("rua");
 var numero=document.getElementById("numero");
 var bairro = document.getElementById("bairro");
 var cidade = document.getElementById("cidade");
-var estado=document.getElementById("estado");
+var estado=document.getElementById("uf");
 var genero = document.getElementById("genero");
 if (nome.value == ""){
     alert("campo vazio. Por favor, preencha seu nome");
@@ -79,7 +79,7 @@ if(cidade.value == ""){
     cidade.focus();
     return;
 }
-if(estado.value == ""){
+if(uf.value == ""){
     alert("campo vazio. Por favor, ensira seu estado");
     estado.focus();
     return;
