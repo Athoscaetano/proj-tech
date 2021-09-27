@@ -1,0 +1,249 @@
+<!-- Aqui informo que esta página é html5. -->
+<!DOCTYPE html>
+<!-- Aqui inicio o elemento html especificando a linguagem da página que está em português. -->
+<html lang="pt-br">
+<!-- cabeçalho da página. -->
+<head>
+<!-- Aqui inplementei o meta charset para que a página tenha acento -->
+     <meta charset="utf-8">
+<!-- utilizei meta name para dizer o autor da página, e meta viewport para se ajustar aos dispositivos móveis. -->
+    <meta name="author" content="Athos Caetano da Silva">
+<meta name="viewport"content="width=device-width, initial-scale=1.0" />
+<!-- Título da página -->
+<title>a segurança de investir</title>
+</head>
+<!-- Corpo da página onde os usuários vam interagir -->
+<body>
+   
+    <!-- imagem do logotipo de investimentos do Itaú -->
+    <img height="200" width="200"src="images/logotipo.jpeg" alt="Arte com fundo bicolor. O lado esquerdo, é na cor azul claro e o lado direito, ocupando quase três quartos da imagem, é cinza chumbo. Sobre a linha vertical que divide as duas cores, um pequeno círculo branco. Dentro dela um quadrado azul, de pontas arredondadas, dentro dele, na sua base, a palavra Itaú na cor amarela. No canto superior esquerdo da imagem, está escrito investimentos em branco." align="middle"
+    <!-- utilizei a tag hr para fazer uma separação de linha. -->
+    <hr>    
+   
+   <!-- usei a tag header para contornar os títulos h. -->
+   <header>
+<h1>Envista com a gente</h1>
+</header>
+
+<!-- Usei a tag de parágrafo p para escrever um texto, utilizando br para quebrar linhas. -->
+<p>nunca foi tão fácil investir.<br>A tranquilidade de saber que seu dinheiro está com pessoas empenhadas em te proporsionar a melhor esperiência em investimentos.<br>Uma equipe especializada em cuidar de seus ativos como nenhuma outra.<br>Comece já</p>
+<!-- Usei hr para separar linha e mostrar que vamos pular para outro conteúdo na página. -->
+<hr>
+<!-- aqui criei o início do meu formulário, especificando o locau url que os dados  serão enviados com action, utilizando o método http que no meu caso foi post, indicando o atributo id e o seu nome. -->
+<form action ="" id="formulario" method="POST" name="formulario">
+        
+
+<!-- Aqui abri um section para fazer uma divisão mais semântica. -->    
+<section>
+            
+    <!-- Parágrafo para iniciar as perguntas. -->
+    <p>Antes de iniciar seu cadastro, precisamos que nos informe um pouco sobre você a fim de melhor te atender:</p>
+    <!-- Aqui utilizei o main para indicar que esse título é o principal -->
+    <main>
+                <h3>você se considera como uma pessoa:</h3>
+  <!-- aqui eu criei o atributo div com a classe input-group para agrupar as entradas de dados. --> 
+  <div class="input-group">
+                    
+    <!-- utilizei fieldset para melhor demarcar os campos. -->
+    <fieldset>
+                        
+        <!-- Utilizei labels para etiquetar os campos de uma maneira mais acessíveis aos leitores de tela. -->
+        <label for="option">escolha uma opção</label>
+                       
+        <!-- abri a tag select para dar entrada nos campos de seleção, utilizando os atributos id e nome para melhor identificação. -->
+        <select id="option" name="option">
+                            <option id="cauteloso">Cauteloso: Não gosta de correr riscos</option>
+                            
+                            <!-- utilizei a tag option para que o usuário escolha uma opção, usando a tag br para mudar de linha e assim alinhar melhor visualmente. -->
+                            <br>
+                            <option id="equilibrado">Equilibrado: Analisa antes de tomar qualquer ação arriscada</option>
+                            <br>
+                            <option id="arrojado">Arrojado: Se considera um investidor experiente e gosta de arriscar</option>
+                            <br>
+                            <option     id="ousado">ousado: Gosta de investir altos valores visando grandes lucros</option>
+                            <br>
+                        </select>
+                    </fieldset>
+                </div>
+                <br>
+                <h3>qual sua renda?</h3>
+                <div class="input-group">
+                    <fieldset>
+                        <label for="renda">nos informe sua renda:</label>
+                        <select id="renda" name="renda">
+                            <option id="r$1000">até r$1000</option><br>
+                            <option id="r$2000">até r$2000</option><br>
+                            <option id="r$3000">até r$3000</option><br>
+                            <option id="r$4000">até r$4000</option><br>
+                            <option id="r$5000">até r$5000</option><br>
+                        </select>
+                    </fieldset>
+                </div>
+                <br>
+                <header>
+                <h5>quanto você está disposto a investir mensalmente:</h5>
+                </header>
+                <fieldset>
+                    <label for="investimento">diga-nos o quanto você quer investir:</label>
+                    <!-- Aqui coloquei o tipo de entrada como área de texto para que o usuário escreva o valor, colocando o placeholder como um auxílio aos leitores de tela e maxlength para que não passe de 10 caracteres. -->
+                    <input type="testarea" id="test" name="test" placeholder="digite o valor do seu investimento aqui" maxlength="10" />
+                </fieldset>
+           
+           <!-- Aqui fechei a section indicando o término da parte de perguntas -->
+        --> </section>
+            
+        <!-- Aqui iniciei a section de dados pessoais -->
+        <section>
+            <header>
+                <h2>para continuarmos, precisamos de alguns dados seus:</h2>
+            </header>
+            <br>
+            <header>
+                <h3>Dados pessoais: Por favor, preencha-los corretamente:</h3>
+            </header>    
+        <legend>seus dados</legend>
+<div class="input-group">
+<fieldset>
+<label for="nome">Nome*:</label>
+<input type="text" id="nome" name="nome" required maxlength="30"/>
+</fieldset>
+</div>
+<hr>
+<div class="input-group">
+<fieldset>
+<label for="sobrenome">Sobrenome*:</label>
+<input type="text" id="sobrenome" name="sobrenome" required maxlength="20"/>
+</fieldset>
+</div>
+<hr>
+<div class="input-group">
+<fieldset>
+<label for="email">Email*:</label>
+<input type="email" id="email" name="email" required />
+</fieldset>
+</div>
+<hr>
+<div class="input-group">
+<fieldset>
+<label for="telefone">telefone*:</label>
+<input type="tel" required="required" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="ensira seu telefone aqui:" />
+</fieldset>
+</div>
+<hr>
+<div class="input-group">
+    <fieldset>
+    <label for"celular">celular*:</label>
+    <input type="tell" id="celular" name="celular" required placeholder="ensira seu número de celular aqui:"/>
+</fieldset>
+</div>
+<div class="input-group">
+<fieldset>
+<label for="cpf">cpf*:</label>
+<input type="text" id="cpf" name="cpf" required />
+</fieldset>
+</div>
+<hr>
+<div class="input-group">
+<fieldset>
+<label for="rg">rg*:</label>
+<input type="text" id="rg" name="rg" required />
+</fieldset>
+</div>
+<hr>
+<div class="input-group">
+<fieldset>
+<label for="date">data de nascimento*:</label>
+<input type="date" id="date" name="nascimento" required />
+</fieldset>
+</div>
+<hr>
+<div class"input-group">
+    <fieldset>
+            <label for="cep">CEP*:</label>
+            <input type="text" id="cep" name="cep" required onblur="pesquisacep(this.value)" />
+            </fieldset>
+    </div>
+            <hr>
+        <div class="input-group">
+            <fieldset>
+            <label for="rua">Rua*:</label> 
+            <input type="text" id="rua" name="rua" required />
+        </fieldset>
+    </div>
+    <hr>
+    <div class="input-group">
+        <fieldset>
+            <label for="numero">número:</label>
+            <input type="text" id="numero" name="numero" required />
+            </fieldset>
+    </div>
+    <hr>
+    <div class="input-group">
+        <fieldset>
+            <label for="bairro">Bairro*:</label>
+            <input type="text" id="bairro" required name="bairro"  />
+            </fieldset>
+    </div>
+    <hr>
+    <div class="input-group">
+        <fieldset>
+        <label for="cidade":>Cidade*</label>
+        <input type="cidade" id="cidade" name="cidade" required class="endereco" />
+        </fieldset>
+        </div>
+        <hr>
+        <div class="input-group">
+            <fieldset>
+            <label for="estado">Estado*:</label>
+            <input type="text" id="uf" name="estado" required  maxlength=2 placeholder="estado" />
+            </fieldset>
+            </div>
+            <hr>
+            <div class="input-group">
+            <fieldset>
+                <label for="IBGE">IBGE:</label>
+            <input type="text" id="ibge" name="ibge" placeholder="IBGE  " />
+            </fieldset>
+        </div>
+        <hr>
+        <div class="input-group">
+<fieldset>
+<label for="genero">Gênero:</label>
+<select id="genero" name="genero">
+<option value="">informe seu gênero:</option>
+<option value="m">masculino</option>
+<option value="f">femenino</option>
+<option value="x">prefiro não dizer</option>
+</select>
+</fieldset>
+</div>
+<button type="button" class="botao" onclick="valid()" onclick="testaCPF(strCPF)" onclick="limpa_formulário_cep()" onclick="meu_callback(conteudo) onclick="pesquisacep(valor)">enviar
+    <!-- Aqui eu enviei o formulário, chamando as funções do java script. --> 
+</section>
+</form>
+<hr>
+
+<!-- aqui eu escrevi o caminho dos arquivos -->
+<script src="scripts/javascript1.js"></script>
+<script src="scripts/validaDados.js"></script>
+<!-- Aqui inicia meu rodapé, dando informações sobre mim como foto, endereços para contato e um parágrafo de descrição. -->
+<footer>
+    <img height="200" width="200" src="images/minha_foto.jpeg" alt="Fotografia aproximada. Homem de pele branca, cabelos pretos e curtos. Rosto oval, sobrancelhas grossas e escuras, e olhos castanhos escuros. Tem o nariz arredondado e sua boca pequena está sutilmente entreaberta, com um leve sorriso. Está com a barba por fazer e usa camisa polo amarela clara. Ao fundo, uma parede branca."
+    <address>
+        <p>desenvolvido por Athos Caetano da Silva</p>
+<header>
+<h2>sobre mim:</h2>
+</header>
+<p>iniciante em programação, gosto de livros e idiomas.<br>Meu principal objetivo é espandir meus conhecimentos em tecnologia e me tornar um proficional na área.</p> 
+<h3>Meus contatos:</h3>
+<nav>
+    <lu>
+        <li><a href="https://www.linkedin.com/in/athos-caitano-26722020b">linkedIn</a></li>
+        <li><a href="https://github.com/Athoscaetano">meu git hub</a></li>
+        <li><a href="athosalizon1993@gmail.com">meu email para contato</a></li>
+    </lu>
+</nav>
+</address>
+</footer>
+</body>
+</html>
